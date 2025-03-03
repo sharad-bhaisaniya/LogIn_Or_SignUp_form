@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Log-In Or Sign-Up</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-signin">
+        <div class="sign-in side1">
+          <h1>Welcome To Sign In</h1>
+          <img
+            src="https://cdni.iconscout.com/illustration/premium/thumb/login-security-illustration-download-in-svg-png-gif-file-formats--protection-password-nallow-set-04-pack-design-development-illustrations-7169452.png?f=webp"
+            alt=""
+          />
+          <div class="signin">
+            Go register <span onclick="sliderLeft()" id="slide1">SignUp?</span>
+          </div>
+        </div>
+
+        <div class="side2">
+          <h1>sign In</h1>
+          <form action="https://beautiful-crepe-a674f5.netlify.app/">
+            <div id="erroremail2"></div>
+            <input type="email" name="email" id="email2" placeholder="email" />
+            <br />
+            <div id="errorpassword2"></div>
+            <input type="password" id="password2" placeholder="password" />
+            <br />
+
+            <input
+              type="submit"
+              id="button"
+              value="Log In"
+              onclick="return localStorg()"
+            />
+          </form>
+        </div>
+      </div>
+
+      <div class="form-signup">
+        <div class="side1">
+          <h1>Welcome To Sign up</h1>
+          <img
+            src="https://cdni.iconscout.com/illustration/premium/thumb/sign-up-illustration-download-in-svg-png-gif-file-formats--log-register-form-user-interface-pack-design-development-illustrations-6430773.png?f=webp"
+            alt=""
+          />
+          <div class="signin">
+            Go account <span onclick="sliderRight()" id="slide2">login?</span>
+            
+          </div>
+   
+        </div>
+
+        <div class="side2">
+          <h1>sign up</h1>
+          <form action="">
+            <div id="errorname"></div>
+            <input type="text" name="name" id="name" placeholder="name" />
+            <br />
+            <div id="erroremail"></div>
+            <input type="email" name="email" id="email" placeholder="email" />
+            <br />
+            <div id="errorpassword"></div>
+            <input type="password" id="password" placeholder="password" />
+            <br />
+            <div id="errorconfirmpassword"></div>
+            <input
+              type="password"
+              id="confirmPassword"
+              placeholder="confirm password"
+            />
+            <br />
+            <input
+              type="submit"
+              id="button"
+              value="sign up"
+              onclick="return formValidation()"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- js link -->
+    <script src="script.js"></script>
+
+    <!-- font Awesome Link -->
+    <script
+      src="https://kit.fontawesome.com/61cf63b295.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
